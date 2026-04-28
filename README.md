@@ -82,7 +82,7 @@ View your app in AI Studio: https://ai.studio/apps/82ea8634-17da-451b-96ff-d7323
 | 자가 검증 항목 | `CHECKLIST.md` |
 | 테스트 입력 | `test-input/*.json` |
 
-Design.md 정리
+## Design.md 정리
 
 1. 시스템 개요 및 핵심 가치
 
@@ -134,7 +134,7 @@ API 오류: Gemini 호출 실패 시 최대 3회 지수 백오프(Exponential Ba
 형식 오류: AI의 응답이 잘못된 JSON일 경우 텍스트에서 JSON 블록을 재추출하는 정제 로직 포함.
 
 
-Requirements.md
+## Requirements.md
 
 1. 문제 정의 및 도입 효과
 취업 준비 과정에서 발생하는 정보의 비정형성과 개인화된 계획 수립의 어려움을 해결하는 것이 핵심입니다.
@@ -176,7 +176,7 @@ GPA 불변식: gpaToLevel 함수는 어떤 입력값에 대해서도 항상 1~5 
 로드맵 길이: 결과물인 로드맵 배열의 길이는 항상 plannerConfig.years + plannerConfig.gapYears와 같아야 함.
 
 
-steering.md
+## steering.md
 요청하신 University-to-Career Planner의 운영 가이드라인인 Steering Document 핵심 내용을 정리해 드립니다. 이 문서는 AI 에이전트인 Uni-Career Master(UCM)가 사용자에게 응답할 때 준수해야 할 페르소나, 우선순위 로직 및 보안 원칙을 정의하고 있습니다.
 
 1. 에이전트 페르소나: Uni-Career Master (UCM)
@@ -227,7 +227,7 @@ None (gap ≥ 0): 현재 상태 유지 및 심화 학습 권고.
 5. 실패 시나리오별 대응 지침
 시나리오에이전트 행동성적표 파싱 실패ParseError 반환 및 "수동 입력 폼"으로 즉시 안내.API 완전 실패SK하이닉스 기준 기본 템플릿 데이터 제공 후 "AI 점검 중" 알림.모의면접 단답형 답변"최소 2문장 이상 입력" 가이드 제공 후 재입력 유도.모호한 직무명 입력유사 직무 목록(SK하이닉스 공식 카테고리 기반) 추천.
 
-tasks.md
+## tasks.md
 1. 구현 로드맵 개요
 전체 개발 공정은 [타입/유틸리티 → 데이터 파서 → AI 에이전트 레이어 → 상태 관리 → UI 컴포넌트 → 통합] 순서로 진행되며, 각 단계마다 속성 기반 테스트(Property-based Testing)를 통해 시스템의 무결성을 검증하도록 설계되었습니다.
 
